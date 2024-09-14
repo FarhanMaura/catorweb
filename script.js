@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (game.game_over()) {
       alert("Skak njeng :v");
     } else {
-      const RandomIdx = math.floor(Math.random() * possibleMoves.length);
+      const RandomIdx = Math.floor(Math.random() * possibleMoves.length);
       const move = possibleMoves[RandomIdx];
       game.move(move);
       board.position(game.fen());
